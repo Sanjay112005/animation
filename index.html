@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(https://raw.githubusercontent.com/HoanghoDev/youtube_v2/main/slider_3d/images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position:1"><img src="https://i.pinimg.com/474x/07/03/9b/07039b22bfd5ad179d1a597b08a67adc.jpg" ></div>
+            <div class="item" style="--position:2"><img src="https://i.pinimg.com/474x/6f/4e/ad/6f4eaddfb45810ecfbbefab432d77fd8.jpg" ></div>
+            <div class="item" style="--position:3"><img src="https://i.pinimg.com/474x/1f/17/ad/1f17ad2c6a5b1ba8918b80871aac5f9a.jpg" ></div>
+            <div class="item" style="--position:4"><img src="https://i.pinimg.com/474x/ad/13/bf/ad13bf62d10f783fafabb1ee01ab01e8.jpg" ></div>
+            <div class="item" style="--position:5"><img src="https://i.pinimg.com/474x/39/f0/bb/39f0bb0664cdf534463580ecd4c6a0d9.jpg" ></div>
+            <div class="item" style="--position:6"><img src="https://i.pinimg.com/474x/23/5a/6b/235a6b454e4c4080b26acf5c027d527c.jpg" ></div>
+            <div class="item" style="--position:7"><img src="https://i.pinimg.com/474x/cd/c1/ef/cdc1ef397a46564bb46d3d60926a6aec.jpg" ></div>
+            <div class="item" style="--position:8"><img src="https://i.pinimg.com/474x/84/b6/bf/84b6bf9215cf1f3c30e9d9e911d5b377.jpg" ></div>
+            <div class="item" style="--position:9"><img src="https://i.pinimg.com/474x/62/84/12/6284122c6799945a77c1563c341bbbd5.jpg" ></div>
+            <div class="item" style="--position:10"><img src="https://i.pinimg.com/474x/53/70/77/537077c86c99c266bc5e5ed77ac032b3.jpg" ></div>
+        </div>
+        <div class="content">
+            <!-- <h1 data-content="CSS ONLY"> -->
+                <!-- CSS ONLY -->
+            <!-- </h1> -->
+            <div class="author">
+                <!-- <h2>SANJAY</h2> -->
+                <!-- <p><b>Web Design</b></p> -->
+               
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
